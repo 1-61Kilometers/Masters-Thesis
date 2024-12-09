@@ -93,10 +93,12 @@ Implementation of:
 
 ### 3.1 Basic Setup
 
+![Simple Setup](Simple.png)
 The basic workspace configuration establishes a direct communication pathway between a mixed reality device and an ABB robot through TCP (Tool Center Point) coordination. The mixed reality device provides hand position (or device position if using a smartphone) input that defines the digital TCP location, which is then overlaid onto the physical TCP. The ABB robot processes this positional data through its inverse kinematics solver to execute the corresponding movements. This setup utilizes path construction playback and editing functions however, it does not implement a digital twin and does not provide object collision.
 
 ### 3.2 Advanced Setup
 
+![Advanced Setup](Advanced.png)
 The advanced configuration implements Nvidia's Isaac simulation environment to enhance the system's capabilities. This setup introduces several key components working in concert:
 
 The system architecture consists of:
